@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Quiz App</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Intro Screen -->
+        <div id="intro-screen" class="screen active">
+            <h1>Welcome to the Quiz App</h1>
+            <input type="text" id="username" placeholder="Enter your name" />
+            <button id="start-quiz-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div id="quiz-header">
+                <h2 id="question-number">Question 1 of 47</h2>
+                <div id="progress-bar-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="question-container">
+                <p id="question-text">Question will appear here.</p>
+                <div id="options-container">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+            </div>
+            <div id="navigation-buttons">
+                <button id="prev-btn">Previous</button>
+                <button id="next-btn">Next</button>
+                <button id="submit-btn">Submit Quiz</button>
+            </div>
+        </div>
+
+        <!-- Completion Screen -->
+        <div id="completion-screen" class="screen">
+            <h1>Thank You for Participating!</h1>
+            <p id="thank-you-message">Thank you, [Name], for completing the quiz.</p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
